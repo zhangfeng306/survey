@@ -1,5 +1,4 @@
 $(function() {
-
   // 文档就绪
   $("#button").on("click", function() {
     var val1 = $('input:radio[name="question1"]:checked').val();
@@ -56,22 +55,30 @@ $(function() {
       return;
     }
 
-    // var sum = Number(val1) + Number(val2) + Number(val3) + Number(val4) + Number(val5) + Number(val6) + Number(val7) + Number(val8) + Number(val9);
-    // alert('val:' + val1 + '  ' + 'val2:' + val2 + '           sum:' + sum);
+      var myform = $("#myForm");
+      myform.submit();
+
+    var sum = Number(val1) + Number(val2) + Number(val3) + Number(val4) + Number(val5) + Number(val6) + Number(val7) + Number(val8) + Number(val9);
+  //  alert('val:' + val1 + '  ' + 'val2:' + val2 + '           sum:' + sum);
     // if (sum <= 32) {
-    //   window.location.href = 'result4.html';
+    //   window.location.href = '/result/result4.jsp';
     // } else if (sum > 32 && sum <= 44) {
-    //   window.location.href = 'result3.html';
+    //   window.location.href = '/result/result3.jsp';
     // } else if (sum > 44 && sum <= 57) {
-    //   window.location.href = 'result2.html';
+    //   window.location.href = '/result/result2.jsp';
     // } else if (sum > 57 && sum <= 67) {
-    //   window.location.href = 'result1.html';
+    //   window.location.href = '/result/result1.jsp';
     // }
 
   });
 
 });
 
+//删除
+function tijiao(){
+    var myform = $("#myForm");
+    myform.submit();
+}
 function isBlank(str) {
   if (str == null || str == undefined || str == "") {
 
