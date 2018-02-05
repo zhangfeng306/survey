@@ -22,7 +22,7 @@
   <script type="text/javascript" src="${pageContext.request.contextPath }/js/jquery-3.2.1.min.js"></script>
   <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
   <script type="text/javascript" src="${pageContext.request.contextPath }/css/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath }/js/utils.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath }/js/vote/vote.js"></script>
   <style>
     @media print {
       .container {
