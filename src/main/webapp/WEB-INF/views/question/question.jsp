@@ -2,14 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <%--<meta http-equiv="pragma" content="no-cache">--%>
-  <%--<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />--%>
-  <%--<meta http-equiv="Expires" content="0" />--%>
-  <%--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />--%>
-  <%--<meta name="renderer" content="webkit">--%>
-  <%--<meta name="Keywords" content="问卷调查" />--%>
-  <%--<meta name="Description" content="问卷调查" />--%>
-  <%--<meta name="format-detection" content="telephone=no" />--%>
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="renderer" content="webkit">
+  <meta name="Keywords" content="问卷调查" />
+  <meta name="Description" content="问卷调查" />
+  <meta name="format-detection" content="telephone=no" />
   <title>问卷调查</title>
 
  <!-- 新 Bootstrap 核心 CSS 文件 -->
@@ -32,16 +32,8 @@
 </head>
 
 <body>
-  <form action="/vote/add" method="POST" id="myForm" name="myForm">
-    <%--<input type="hidden" name="question1" id="question1" value="" />--%>
-    <%--<input type="hidden" name="question2" id="question2" value="" />--%>
-    <%--<input type="hidden" name="question3" id="question3" value="" />--%>
-    <%--<input type="hidden" name="question4" id="question4" value="" />--%>
-    <%--<input type="hidden" name="question5" id="question5" value="" />--%>
-    <%--<input type="hidden" name="question6" id="question6" value="" />--%>
-    <%--<input type="hidden" name="question7" id="question7" value="" />--%>
-    <%--<input type="hidden" name="question8" id="question8" value="" />--%>
-    <%--<input type="hidden" name="question9" id="question9" value="" />--%>
+  <form action="/vote/addVote" method="POST" id="myForm" name="myForm">
+
 
   <div class="container">
     <div class="row clearfix">
@@ -75,7 +67,7 @@
 
     <div>
       <div class="title">
-        2. 你经常喝奶茶么？
+        2. 你经常喝奶茶吗？
       </div>
       <div class="radio">
         <label>

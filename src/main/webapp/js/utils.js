@@ -58,7 +58,7 @@ $(function() {
       var myform = $("#myForm");
       myform.submit();
 
-    var sum = Number(val1) + Number(val2) + Number(val3) + Number(val4) + Number(val5) + Number(val6) + Number(val7) + Number(val8) + Number(val9);
+  //  var sum = Number(val1) + Number(val2) + Number(val3) + Number(val4) + Number(val5) + Number(val6) + Number(val7) + Number(val8) + Number(val9);
   //  alert('val:' + val1 + '  ' + 'val2:' + val2 + '           sum:' + sum);
     // if (sum <= 32) {
     //   window.location.href = '/result/result4.jsp';
