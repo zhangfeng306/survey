@@ -13,6 +13,7 @@
             <arg column="create_time" javaType="java.util.Date" jdbcType="TIMESTAMP"/>
         </constructor>
     </resultMap>
+
     <sql id="Base_Column_List">
     id, question_code, question_name, answer_code, answer_name, answer_score, batch_no, 
     create_time

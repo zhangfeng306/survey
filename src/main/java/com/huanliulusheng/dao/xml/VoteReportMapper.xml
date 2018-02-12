@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huanliulusheng.dao.mapper.VoteReportMapper">
+    <resultMap id="BaseResultMap" type="com.huanliulusheng.entity.VoteReportBean">
+        <constructor>
+            <arg column="question_code" javaType="java.lang.String" jdbcType="CHAR"/>
+            <arg column="question_name" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <arg column="answer_code" javaType="java.lang.String" jdbcType="CHAR"/>
+            <arg column="answer_name" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <arg column="sum_answer" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+        </constructor>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+      question_code, question_name, answer_code, answer_name,sum_answer
+  </sql>
+
+
+
+    <select id="selectQuestionSum" parameterType="java.lang.String"
+            resultMap="BaseResultMap">
+        SELECT
+        a.question_code,
+        a.question_name,
+        a.answer_code,
+        a.answer_name,
+        IFNULL(s.sum_answer, 0) sum_answer
+        FROM
+        tab_answer a
+        LEFT JOIN (
+        SELECT
+        count(1) sum_answer,
+        v.answer_code
+        FROM
+        tab_vote v
+        <where>
+            <if test="questionCode != null">
+                v.question_code = #{questionCode,jdbcType=CHAR}
+            </if>
+        </where>
+        GROUP BY
+        v.answer_code
+        ) s ON (a.answer_code = s.answer_code)
+        <where>
+            <if test="questionCode != null">
+                a.question_code = #{questionCode,jdbcType=CHAR}
+            </if>
+        </where>
+    </select>
+</mapper>

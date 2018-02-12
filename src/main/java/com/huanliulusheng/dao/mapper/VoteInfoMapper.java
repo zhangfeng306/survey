@@ -19,4 +19,5 @@ public interface VoteInfoMapper {
     int updateByPrimaryKeySelective(VoteInfo record);
 
     int updateByPrimaryKey(VoteInfo record);
+
 }

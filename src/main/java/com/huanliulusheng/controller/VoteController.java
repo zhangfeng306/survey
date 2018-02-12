@@ -2,14 +2,9 @@ package com.huanliulusheng.controller;
 
 import com.huanliulusheng.common.BusinessException;
 import com.huanliulusheng.common.bean.ResponseVo;
-import com.huanliulusheng.common.bean.VoteBean;
 import com.huanliulusheng.common.contants.ControllerContants;
-import com.huanliulusheng.entity.VoteInfo;
 import com.huanliulusheng.service.VoteService;
-import com.huanliulusheng.utils.DateUtils;
 import com.huanliulusheng.utils.UUIDUtils;
-import javafx.scene.shape.VLineTo;
-import net.sf.json.JSONObject;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

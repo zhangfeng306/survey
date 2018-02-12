@@ -28,6 +28,17 @@
         width: auto;
       }
     }
+    .container{
+      width:352px;
+      height:70px;
+    }
+
+    <%--body{--%>
+      <%--width: 50%;--%>
+      <%--height:auto;--%>
+      <%--background:url("${pageContext.request.contextPath }/image/question/q4.png") no-repeat;--%>
+      <%--background-size: 100%;--%>
+    <%--}--%>
   </style>
 </head>
 
@@ -300,7 +311,7 @@
     <br>
     <br>
     <center>
-      <button id="button" type="button" class="btn btn-default" >提交</button>
+      <button id="button" type="button" class="btn btn-default" ><span class="label label-info">提交</span></button>
     </center>
   </div>
   </form>
