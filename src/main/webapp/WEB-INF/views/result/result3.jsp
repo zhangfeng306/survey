@@ -25,7 +25,7 @@
   <style>
     body {
 
-      background: url("${pageContext.request.contextPath }/image/answer/茉香带文字.png");
+      background: url("${pageContext.request.contextPath }/image/answer/mlx.png");
       margin: 0;
       padding: 0;
       width:100%;

@@ -27,7 +27,7 @@
 
 
     body {
-      background: url("${pageContext.request.contextPath }/image/answer/港式丝滑带文字.png");
+      background: url("${pageContext.request.contextPath }/image/answer/gssh.png");
       margin: 0;
       padding: 0;
       width:100%;

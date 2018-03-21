@@ -35,9 +35,20 @@
         body {
             width: auto;
             height: auto;
-            background: url("${pageContext.request.contextPath }/image/question/q5.png") no-repeat;
-            background-size: 100%;
+            background: url("${pageContext.request.contextPath }/image/question/q8.png") no-repeat;
+            background-size: 100% 100%;
+            font-family: 微软雅黑, 宋体;
+            color: whitesmoke;
         }
+
+        button[type="button"] {
+            width: 100px;
+            height: 100px;
+            background: url('${pageContext.request.contextPath }/image/question/submit.png');
+            background-size: 100% 100%;
+          /*  border:none;*/
+        }
+
     </style>
 </head>
 
@@ -48,17 +59,17 @@
     <div class="container">
         <div class="row clearfix">
             <div class="col-md-12 column">
-                <center>
-                    <h2>
-                        超准！原来我是这样的奶茶女神
-                    </h2>
-                </center>
+                <h1 style="position:absolute;left:10%;font-family: 微软雅黑;">
+                    原来,<br>
+                    我是这样的奶茶女神
+                </h1>
                 <p>
-                <p class="lead">奶茶有千般，我有我最爱！潜藏于表面下的你究竟是什么类型的奶茶女神呢？</p>
+                <p class="lead" style="position:absolute;left:3%;top:135px;font-family: 微软雅黑;">奶茶有千般，我有我最爱！潜藏于表面下的你究竟是什么类型的奶茶女神呢？</p>
                 </p>
             </div>
         </div>
-        <div>
+        <div style="left:5%">
+            <div style="height:200px"></div>
             <div class="title">
                 1. 你的专业是 ？
             </div>
@@ -103,47 +114,27 @@
             <div class="title">
                 3.如果以旺仔牛奶的甜度为4分，满分7分，你喜欢奶茶甜度几分呢？
             </div>
-            <div>
+
+            <div class="radio">
                 <strong>无糖</strong>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" value="1" id="question3" name="question3">1</input>
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" value="2" id="question3" name="question3">2</input>
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" value="3" id="question3" name="question3">3</input>
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" value="4" id="question3" name="question3">4</input>
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" value="5" id="question3" name="question3">5</input>
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" value="6" id="question3" name="question3">6</input>
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" value="7" id="question3" name="question3">7</input>
-                </label>
-            </div>
-            <div class="radio">
+                <input type="radio" value="1" id="question3" name="question3">1</input>
+
+
+                <input type="radio" value="2" id="question3" name="question3">2</input>
+
+                <input type="radio" value="3" id="question3" name="question3">3</input>
+
+                <input type="radio" value="4" id="question3" name="question3">4</input>
+
+                <input type="radio" value="5" id="question3" name="question3">5</input>
+
+                <input type="radio" value="6" id="question3" name="question3">6</input>
+
+                <input type="radio" value="7" id="question3" name="question3">7</input>
+
                 <strong>甜度Max</strong>
             </div>
+
         </div>
         <br/>
 
@@ -312,7 +303,7 @@
         <br>
         <br>
         <center>
-            <button id="button" type="button" class="btn btn-primary" style="height: 30px;width:50px"> 提 交</button>
+            <button id="button" type="button"></button>
         </center>
     </div>
 </form>

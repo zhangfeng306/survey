@@ -32,7 +32,7 @@
     }
     body {
 
-      background: url("${pageContext.request.contextPath }/image/answer/焦糖阿萨姆带文字.png");
+      background: url("${pageContext.request.contextPath }/image/answer/jtasm.png");
       margin: 0;
       padding: 0;
       width:100%;
