@@ -35,7 +35,7 @@
         body {
             width: auto;
             height: auto;
-            background: url("${pageContext.request.contextPath }/image/question/q8.png") no-repeat;
+            background: url("${pageContext.request.contextPath }/image/question/q10.png") no-repeat;
             background-size: 100% 100%;
             font-family: 微软雅黑, 宋体;
             color: whitesmoke;
@@ -59,10 +59,10 @@
     <div class="container">
         <div class="row clearfix">
             <div class="col-md-12 column">
-                <h1 style="position:absolute;left:10%;font-family: 微软雅黑;">
+               <%-- <h1 style="position:absolute;left:10%;font-family: 微软雅黑;">
                     原来,<br>
                     我是这样的奶茶女神
-                </h1>
+                </h1>--%>
                 <p>
                 <p class="lead" style="position:absolute;left:3%;top:135px;font-family: 微软雅黑;">奶茶有千般，我有我最爱！潜藏于表面下的你究竟是什么类型的奶茶女神呢？</p>
                 </p>
